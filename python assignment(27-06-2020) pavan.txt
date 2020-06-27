@@ -1,0 +1,58 @@
+     
+
+                                   Module 3
+        
+                               Python Assignment
+
+
+                                                         Datta M Pavan
+                                                         321910302020
+
+
+1.   Write a python program to read an entire text file
+ 
+ans:-def file_read(fname):
+        txt = open(fname)
+        print(txt.read())
+
+file_read('test.txt')
+
+2.write an python program to append text to a file  and display the text.
+
+ans:-def file_read(fname):
+        from itertools import islice
+        with open(fname, "w") as myfile:
+                myfile.write("Python Exercises\n")
+                myfile.write("Java Exercises")
+        txt = open(fname)
+        print(txt.read())
+file_read('abc.txt')
+
+3.write a python program to read a file line by line store  it into a variable.
+
+ans:-def file_read(fname):
+        with open (fname, "r") as myfile:
+                data=myfile.readlines()
+                print(data)
+file_read('test.txt')
+
+4. write a python program  to read contents of a file using for loop.
+
+ans:-with open("hello.txt") as f:
+    with open("copy.txt", "w") as f1:
+        for line in f:
+            f1.write(line)
+5.write a python program to remove  leading traling spaces from a string.
+
+ans:-# Python code to remove leading & trailing spaces
+# An example of string.strip() function)
+
+# defining string 
+str_var = "    Hello world   "
+
+#printing actual string
+print "Actual string is:\n", str_var
+
+# printing string without
+# leading & trailing spaces
+print "String w/o spaces is:\n", str_var.strip()
